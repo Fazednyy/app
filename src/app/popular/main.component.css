@@ -1,0 +1,23 @@
+img {
+    width: 220px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+.col {
+    width: auto;
+    height: auto;
+}
+
+p {
+    width: 275px;
+    height: 69px;
+    font-size: 15px;
+}
+
+.box {
+    background: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+    width: auto;
+    height: 400px;
+    border-radius: 20%;
+}

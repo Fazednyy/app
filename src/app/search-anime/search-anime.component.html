@@ -1,0 +1,14 @@
+<div class="album py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+      <div class="col fs-4 ms-5" id="box" *ngFor="let obj of StrechAnime">
+        <a (click)="showDetalis(obj.animeId)">
+        <div class="box border border-secondary text-center ">
+          <img src="{{obj.animeImg}}" class="img m-3" alt="{{obj.animeTitle}}">
+          <p class="text-light">{{obj.animeTitle}}</p>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>

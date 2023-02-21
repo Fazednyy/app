@@ -1,0 +1,25 @@
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 container-fluid">
+        <div class="col-10 col-sm-8 col-lg-6 mx-1">
+            <img src="{{animeDetails.animeImg}}" class="d-block mx-lg-auto rounded" alt="Bootstrap Themes" loading="lazy">
+        </div>
+        <div class="col-lg-6 text-light justify-content-center row">
+            <h1 class="fs-1 mb-5  mx-1">{{animeDetails.animeTitle}}</h1>
+            <p class="fs-4 fw-light"> <span class="fw-bold">Anime Type:</span> {{animeDetails.type}}</p>
+            <p class="fs-4 fw-light"> <span class="fw-bold">Released Date:</span>{{animeDetails.releasedDate}}</p>
+            <p class="fs-4 fw-light"> <span class="fw-bold">Status:</span>{{animeDetails.status}}</p>
+            <p class="fs-5 fw-light"> <span class="fw-bold">Geners:</span>{{animeDetails.genres}}</p>
+            <p class="fs-4 fw-light"> <span class="fw-bold">Total Episodes:</span>{{animeDetails.totalEpisodes}}</p>
+        </div>
+        <!-- <div class="col-10 col-sm-8 col-lg-6 mx-1">
+            <img src="{{animeDetails.animeImg}}" class="d-block mx-lg-auto rounded" alt="Bootstrap Themes" loading="lazy">
+        </div> -->
+    </div>
+</div>
+<div class="container text-light mt-5">
+    <div class="row">
+        <div class="col-1 m-2" *ngFor="let obj of animeDetails.episodesList.reverse()">
+            <button (click)="click()" class="btn btn-outline-light me-2">{{obj.episodeNum}}</button>
+        </div>
+    </div>
+</div>

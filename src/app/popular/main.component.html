@@ -1,0 +1,29 @@
+<!-- <div class="container-fluid">
+    <div class="col-4" *ngFor="let obj of RecentEpisodes ">
+        <img src='{{obj.animeImg}}' alt="anime" width="300px" height="450px"><br>
+       
+    </div>
+</div> -->
+
+<div class="album py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+      <div class="col fs-4 ms-5" id="box" *ngFor="let obj of PopularEpisodes">
+        <a (click)=" showDetalis(obj.animeId)">
+        <div class="box border border-secondary text-center ">
+          <img src="{{obj.animeImg}}" class="img m-3" alt="{{obj.animeTitle}}">
+          <p class="text-light">{{obj.animeTitle}}</p>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="py-3 my-4">
+      <ul class="nav justify-content-center pb-3 mb-3">
+          <li class="nav-item"><button (click)="back()"  class="btn btn-light m-3">back</button></li>
+          <li class="nav-item"><button (click)="next()"  class="btn btn-light m-3">next</button></li>
+      </ul>
+  </div>
+</div>
